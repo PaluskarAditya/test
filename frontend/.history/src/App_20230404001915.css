@@ -1,0 +1,300 @@
+.App {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 70px;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  padding: 20px;
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.nav-ul-left, .nav-ul-right {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-ul-left {
+  padding-left: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nav-ul-left a, .nav-ul-right a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.home {
+  position: relative;
+}
+
+.home-sec-1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  background-image: url("../public/main_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.home-sec-1 h1 {
+  font-size: 80px;
+  margin: 0px;
+}
+
+.order-btn {
+  padding: 30px 50px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.65);
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.home-sec-2 {
+  height: 400px;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.home-sec-2 h1 {
+  font-size: 50px;
+  margin: 0px;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  font-size: 40px;
+  background-image: url("https://cdn.shopify.com/s/files/1/0066/7569/3639/articles/how-to-eat-healthy.jpg?v=1611987977");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.login-form input[type='text'], .inp {
+  margin: 5px 0px;
+  padding: 10px 10px;
+}
+
+.login-form input[type='text']::placeholder {
+  /* font-size: 20px; */
+}
+
+.login-form input[type="submit"] {
+  margin: 5px;
+  padding: 12px 10px;
+  width: 100%;
+  background: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.login-form input[type="submit"]:hover {
+  background: rgb(185, 185, 185);
+}
+
+.login-form input[type='text']:focus, .inp:focus {
+  outline: none;
+}
+
+
+.login-form p, .login-form a {
+  font-size: 13px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.login-form a {
+  color: white;
+  cursor: pointer;
+}
+
+.home-sec-3 {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://wallpapercrafter.com/sizes/3840x2160/294729-background-frame-food-kitchen-cook-tomatoes-pasta.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+}
+
+.login-overlay {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 50px 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.reach-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.45);
+  color: white;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.reach-overlay h1 {
+  font-size: 50px;
+  margin: 20px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: black;
+  flex: 1;
+  margin: 0px 20px;
+}
+
+.item-img {
+  height: 50%;
+  width: 100%;
+}
+
+.link-card button {
+  margin: 20px;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  transition: color 0.15s;
+  border: none;
+  color: white;
+}
+
+.red {
+  background: rgb(210, 57, 57);
+  transition: background 0.15s;
+}
+
+.red:hover {
+  background: rgb(135, 33, 33);
+}
+
+.orange {
+  background: rgb(223, 145, 1);
+  transition: background 0.15s;
+}
+
+.orange:hover {
+  background: rgb(179, 118, 6);
+}
+
+.home-sec-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px;
+  background: black;
+  color: white;
+}
+
+.home-sec-4 h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.inp {
+  width: 90%;
+  max-width: 90%;
+  min-width: 90%;
+}
+
+.txt {
+  min-height: 50px;
+  min-width: 90.2%;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.home-sec-4 button {
+  width: 92.3%;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}

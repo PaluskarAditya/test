@@ -1,0 +1,92 @@
+.App {
+  background-image: url("../public/main_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+body{
+  padding-top: 50px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  padding: 20px;
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav-ul-left, .nav-ul-right {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-ul-left {
+  padding-left: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nav-ul-left a, .nav-ul-right a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.home-sec-1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px;
+  height: 650px;
+}
+
+.home-sec-1 h1 {
+  font-size: 80px;
+  margin: 0px;
+}
+
+.order-btn {
+  padding: 20px 40px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.65);
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.home-sec-2 {
+  height: 400px;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
